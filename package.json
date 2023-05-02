@@ -1,0 +1,71 @@
+{
+  "name": "web-optional-dots-reporter",
+  "version": "1.0.0",
+  "description": "A test reporter compatible with @web/test-runner, which can print either dots or test suites and test names ans which supports test coverage.",
+  "author": "Ferdinand Prantl <prantlf@gmail.com> (http://prantl.tk)",
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/prantlf/web-optional-dots-reporter/blob/master/LICENSE"
+    }
+  ],
+  "homepage": "http://prantlf.github.com/web-optional-dots-reporter/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prantlf/web-optional-dots-reporter.git"
+  },
+  "bugs": {
+    "url": "http://github.com/prantlf/web-optional-dots-reporter/issues"
+  },
+  "type": "module",
+  "main": "lib/index.cjs",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    "require": "./lib/index.cjs",
+    "import": "./lib/index.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "prepare": "rollup -c",
+    "test": "denolint && tsc --noEmit --esModuleInterop --target es2022 --moduleResolution node test/types.ts"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/github",
+        {
+          "failComment": false
+        }
+      ],
+      "@semantic-release/git"
+    ]
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@web/test-runner-core": "^0.11.1",
+    "denolint": "^2.0.9",
+    "rollup": "^3.21.2",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "@web/test-runner": "^0.16.1"
+  },
+  "keywords": [
+    "test-reporter",
+    "reporter",
+    "dots",
+    "web"
+  ]
+}
