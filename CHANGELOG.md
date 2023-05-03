@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/prantlf/web-optional-dots-reporter/compare/v1.0.1...v1.1.0) (2023-05-03)
+
+
+### Features
+
+* Improve coverage report, render failures bold ([a6e245c](https://github.com/prantlf/web-optional-dots-reporter/commit/a6e245ce31a9af28c8fccd88dc52cb6d0eed514a))
+
 ## [1.0.1](https://github.com/prantlf/web-optional-dots-reporter/compare/v1.0.0...v1.0.1) (2023-05-03)
 
 
