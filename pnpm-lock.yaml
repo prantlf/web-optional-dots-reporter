@@ -4,6 +4,9 @@ dependencies:
   '@web/test-runner':
     specifier: ^0.16.1
     version: 0.16.1(typescript@5.0.4)
+  picocolors:
+    specifier: 1.0.0
+    version: 1.0.0
 
 devDependencies:
   '@semantic-release/changelog':
@@ -2907,6 +2910,10 @@ packages:
 
   /pend@1.2.0:
     resolution: {integrity: sha512-F3asv42UuXchdzt+xXqfW1OGlVBe+mxa2mqI0pg5yAHZPvFmY3Y6drSf/GQ1A86WgWEN9Kzh/WrgKa6iGcHXLg==}
+    dev: false
+
+  /picocolors@1.0.0:
+    resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
     dev: false
 
   /picomatch@2.3.1:
