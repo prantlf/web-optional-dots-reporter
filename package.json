@@ -1,6 +1,6 @@
 {
   "name": "web-optional-dots-reporter",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "A test reporter compatible with @web/test-runner, which can print either dots or test suites and test names ans which supports test coverage.",
   "author": "Ferdinand Prantl <prantlf@gmail.com> (http://prantl.tk)",
   "license": "MIT",
