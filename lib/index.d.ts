@@ -1,4 +1,4 @@
-import { Reporter } from '@web/test-runner-core'
+import type { Reporter } from '@web/test-runner-core'
 
 /**
  * Options of the function `optionalDotsReporter`.

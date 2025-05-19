@@ -1,4 +1,4 @@
-import { Reporter } from '@web/test-runner'
+import type { Reporter } from '@web/test-runner'
 import { optionalDotsReporter } from '..'
 
 declare type testCallback = () => void
